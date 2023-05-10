@@ -96,7 +96,7 @@ const handleSubmit = async (e) => {
     typeText(messageDiv, parsedData);
   } else {
     const err = await response.text();
-
+    console.log(err)
     messageDiv.innerHTML = "Quelque chose ne va pas";
     alert(err);
   }
